@@ -70,7 +70,7 @@ class _KursiAppCoreState extends State<KursiAppCore> {
       i++;
     }
     Volume.controlVolume(AudioManager.STREAM_MUSIC);
-    Volume.setVol(i, showVolumeUI: ShowVolumeUI.SHOW);
+    Volume.setVol(i, showVolumeUI: ShowVolumeUI.HIDE);
   }
 
   void stop() {
@@ -95,6 +95,7 @@ class _KursiAppCoreState extends State<KursiAppCore> {
 
   @override
   void initState() {
+    _maxOutVolume();
     loadAudio();
     labelStatus = "Tap Here to Ward Off Evil";
     textColor = Colors.white;

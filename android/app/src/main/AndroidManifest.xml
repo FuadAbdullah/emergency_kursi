@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ardwashere.emergency_kursi">
    <application
-        android:label="emergency_kursi"
+        android:label="Emergency Kursi"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
